@@ -1,0 +1,6 @@
+begin
+  dbms_java.grant_permission( 'WS', 'SYS:java.net.SocketPermission', 'services.xmethods.net:80', 'connect, resolve');
+  dbms_java.grant_permission('WS','SYS:java.util.PropertyPermission','*','read,write');
+  dbms_java.grant_permission( 'WS', 'SYS:java.lang.RuntimePermission', 'getClassLoader', '' ) ;
+end;
+/
